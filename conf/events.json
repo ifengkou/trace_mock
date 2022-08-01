@@ -1,0 +1,92 @@
+[
+    {
+        "code":"$pageview",
+        "id": 3,
+        "name":"页面浏览",
+        "weight": 28,
+        "properties": [
+            {"key":"pagename","data_type":"string","rules":"主页,财富,我的,生活,实名认证","weight":"4,3,3,2,1","desc":"自定义页面名称"}
+            ,{"key":"uri_path","data_type":"string","rules":"@uri_path","weight":null,"desc":"页面地址"}
+            ,{"key":"time_in","data_type":"float","rules":"0.1~0.5","weight":null,"desc":"白屏时间"}
+            ,{"key":"time_load","data_type":"float","rules":"0.5~2","weight":null,"desc":"首屏时间"}
+            ,{"key":"time_ux","data_type":"float","rules":"2.5~10","weight":null,"desc":"可交互时间"}
+        ]
+    },
+    {
+        "code":"login",
+        "name":"登录",
+        "id": 4,
+        "weight": 9,
+        "properties": [
+            {"key":"is_success","data_type":"bool","rules":"1,0","weight":"9,1","desc":"发送成功"}
+            ,{"key":"login_method","data_type":"string","rules":"手机验证码,手势,人脸识别,密码","weight":"5,3,4,2","desc":"登录方式"}
+        ]
+    },
+    {
+        "code":"send_cpatcha",
+        "name":"发送验证码",
+        "id": 10,
+        "weight": 5,
+        "properties": [
+            {"key":"business_module","data_type":"string","rules":"注册,申请信用卡,申请储蓄卡,登录","weight":"3,2,4,5","desc":"业务模块"}
+            ,{"key":"phone","data_type":"string","rules":"@phone","weight":null,"desc":"手机号码"}
+            ,{"key":"is_success","data_type":"bool","rules":"1,0","weight":"9,1","desc":"发送成功"}
+        ]
+    },
+    {
+        "code":"finance_item_view",
+        "name":"浏览基金页面",
+        "id": 11,
+        "weight": 2,
+        "properties": [
+            {"key":"fund_name,risk_level,fund_type,return_rate_6m","data_type":"string,string,string,float","rules":"中证300,中,ETF,0.42|易方达中概50,高,QDII,-0.21|安心回报债A,中低,债券,0.06|中证红利,高,ETF,0.78|全指金融地产,高,ETF,-0.32|信息技术ETF,高,ETF,0.02|新能源车ETF,高,ETF,1.25|医药ETF,高,ETF,-0.16","weight":"6,3,2,4,5,3,4,1","desc":"基金名称"}
+        ]
+    },
+    {
+        "code":"finance_purchase",
+        "name":"购买基金",
+        "weight": 1,
+        "id": 12,
+        "properties": [
+            {"key":"fund_name,risk_level,fund_type,return_rate_6m","data_type":"string,string,string,float","rules":"中证300,中,ETF,0.42|易方达中概50,高,QDII,-0.21|安心回报债A,中低,债券,0.06|中证红利,高,ETF,0.78|全指金融地产,高,ETF,-0.32|信息技术ETF,高,ETF,0.02|新能源车ETF,高,ETF,1.25|医药ETF,高,ETF,-0.16","weight":"5,5,3,4,5,3,4,2","desc":"基金名称"}
+            ,{"key":"purchase_amout","data_type":"int","rules":"1~100","weight":null,"desc":"申购份额(*100)"}
+        ]
+    },
+    {
+        "code":"evaluate_risk_level",
+        "name":"风险等级评测",
+        "id": 13,
+        "weight": 2,
+        "properties": [
+            {"key":"is_first","data_type":"bool","rules":"1,0","weight":"8,2","desc":"是否首次评测"}
+            ,{"key":"risk_level_result","data_type":"string","rules":"保守型,谨慎型,稳健型,进取型,激进型","weight":"3,4,3,2,1","desc":"评测结果"}
+        ]
+    },
+    {
+        "code":"pop_window",
+        "name":"弹窗",
+        "id": 20,
+        "weight": 8,
+        "properties": [
+            {"key":"is_show","data_type":"bool","rules":"1,0","weight":"8,2","desc":"是否弹出"}
+            ,{"key":"title","data_type":"string","rules":"@string","weight":null,"desc":"弹窗标题"}
+            ,{"key":"pop_type","data_type":"string","rules":"全屏,提示,选择,确认,警告","weight":"3,4,3,2,1","desc":"评测结果"}
+        ]
+    },
+    {
+        "code":"startup",
+        "name":"启动",
+        "id": 1,
+        "weight": 20,
+        "properties": [
+        ]
+    },
+    {
+        "code":"end",
+        "name":"关闭",
+        "id": 2,
+        "weight": 15,
+        "properties": [
+        ]
+    }
+]

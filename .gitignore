@@ -1,0 +1,8 @@
+.vscode/
+logs/
+venv/
+__pycache__
+output/
+*.log
+*.pyc
+kafka.ini

@@ -1,0 +1,13 @@
+{
+    "event":[
+        {
+            "key":"$device_type,$os,$os_version,$model,$brand,$manufacturer,$browser,$browser_version,$lib",
+            "data_type":"string,string,string,string,string,string,string,string,string",
+            "rules":"智能手机,Android,Android 8.0,华为Mate 9,华为,华为,Chrome,Chrome 55.0.2883.87,Android|智能手机,Android,Android 8.0,vivo X9,vivo,vivo,Chrome,Chrome 44.0.2403.119,Android|智能手机,Android,Android 6.0.1,小米 4,小米,小米,Firefox,Firefox 43.0,Android|智能手机,iOS,iOS 11.4,iPhone X,苹果,苹果,Safari,Safari 11.0.3,JS|智能手机,iOS,iOS 10.3.3,iPhone 8,苹果,苹果,微信内置浏览器,微信内置浏览器 6.5.2.501,iOS|desktop,Mac OS X,Mac OS X 10.15.3,apple macintosh,苹果,苹果,Chrome,Chrome 80.0.3987.163,JS|desktop,Mac OS X,Mac OS X 10.15.4,apple macintosh,苹果,苹果,Safari,Safari 13.0.5,JS",
+            "weight":"5,4,7,6,3,2,1"}
+        ,{"key":"$ip","data_type":"string","rules":"@ip@1000","weight":null}
+        ,{"key":"$network","data_type":"string","rules":"中国电信,中国移动,中国联通","weight":"5,4,3"}
+        ,{"key":"$screen_width,$screen_height","data_type":"int,int","rules":"800,1000|1080,1920|1640,2440","weight":"3,5,7"}
+        ,{"key":"$channel","data_type":"string","rules":"安卓应用市场,appstore,柜台扫码,ATM银行扫码,活动推广","weight":"5,4,3,2,1"}
+    ]
+}
